@@ -1,4 +1,4 @@
-package org.ccjmne.faomaintenance.jooq.test;
+package org.ccjmne.orca.jooq.test;
 
 import org.jooq.util.GenerationTool;
 import org.jooq.util.jaxb.Configuration;
@@ -32,6 +32,6 @@ public class TestGenerateJooqClasses {
 										.withDatabase(
 														new Database().withName("org.jooq.util.postgres.PostgresDatabase").withIncludes(".*").withExcludes("")
 																.withInputSchema("public"))
-										.withTarget(new Target().withPackageName("org.ccjmne.faomaintenance.jooq.classes").withDirectory("src/main/java"))));
+										.withTarget(new Target().withPackageName("org.ccjmne.orca.jooq.classes").withDirectory("src/main/java"))));
 	}
 }
