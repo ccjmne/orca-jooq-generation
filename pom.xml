@@ -5,7 +5,7 @@
 
 	<groupId>org.ccjmne.faomaintenance</groupId>
 	<artifactId>foamainteance_jooqgeneration</artifactId>
-	<version>1.4.1</version>
+	<version>1.6.1</version>
 	<packaging>jar</packaging>
 
 	<build>
