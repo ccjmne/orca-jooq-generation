@@ -18,7 +18,7 @@ public class TestGenerateJooqClasses {
 														"jdbc:postgresql://%s:%s/%s",
 														System.getProperty("db_host", "localhost"),
 														System.getProperty("db_port", "5432"),
-														System.getProperty("db_name", "faodb"));
+														System.getProperty("db_name", "orcadb"));
 
 	@Test
 	public void generateJooqClasses() throws Exception {
