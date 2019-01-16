@@ -1,11 +1,12 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>org.ccjmne.faomaintenance</groupId>
-	<artifactId>foamainteance_jooqgeneration</artifactId>
-	<version>1.4.1</version>
+	<groupId>org.ccjmne.orca</groupId>
+	<artifactId>orca-jooq-generation</artifactId>
+	<version>3.0.0</version>
 	<packaging>jar</packaging>
 
 	<build>
@@ -40,14 +41,15 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<jooq.version>3.11.9</jooq.version>
 	</properties>
 
 	<dependencies>
 		<!-- DATABASE DRIVER -->
 		<dependency>
-			<groupId>postgresql</groupId>
+			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
-			<version>9.1-901-1.jdbc4</version>
+			<version>42.2.2</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -55,19 +57,18 @@
 		<dependency>
 			<groupId>org.jooq</groupId>
 			<artifactId>jooq</artifactId>
-			<version>3.7.2</version>
-			<scope>test</scope>
+			<version>${jooq.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.jooq</groupId>
 			<artifactId>jooq-meta</artifactId>
-			<version>3.7.2</version>
+			<version>${jooq.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.jooq</groupId>
 			<artifactId>jooq-codegen</artifactId>
-			<version>3.7.2</version>
+			<version>${jooq.version}</version>
 			<scope>test</scope>
 		</dependency>
 
