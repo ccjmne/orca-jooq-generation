@@ -6,7 +6,7 @@
 
 	<groupId>org.ccjmne.orca</groupId>
 	<artifactId>orca-jooq-generation</artifactId>
-	<version>3.0.0</version>
+	<version>1.8.4</version>
 	<packaging>jar</packaging>
 
 	<build>
